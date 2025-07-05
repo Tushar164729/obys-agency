@@ -10,6 +10,19 @@ html,body{
     height: 100%;
     width: 100%;
 }
+
+
+#crsr{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    /* background-color: rgba(176, 170, 170, 0.749); */
+    border: 1px solid white;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
 #loader{
     height: 100%;
     width: 100%;
@@ -101,5 +114,51 @@ html,body{
 #page1{
     height: 100vh;
     width: 100%;
-    background-color:#b31d1d;
+    background-color:#232020;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+    /* background-color: blueviolet; */
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+
+}
+
+#nav-part2 h4{
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+.hero{
+    /* background-color: blue; */
+    width: 72%;
+    margin-left: 27%;
+    height: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.hero h1{
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    line-height: 7vw;
+    font-weight: 600;
+
+}
+.hero:nth-child(2){
+    margin-top: 19vh;
+}
+
+#hero2 h1:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
 }
